@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkratFinance - Services</title>
+    <style>
+
+        body {
+            background-image: url( "https://images.squarespace-cdn.com/content/v1/54c6cf2fe4b04a4b18424678/1441993680122-VXDRZMTHMMJZX7SOQO02/services-background.jpg?format=1500w");
+            background-size: cover; 
+            background-position: center; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+        }
+
+        #header {
+            background-color: #444;
+            color: #ffffff50;
+            padding: 10px;
+            text-align: right;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #header a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        #header a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: white;
+            font-size: 60px;
+        }
+
+        h3 {
+            color: #444;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .booking-button {
+            background-color: #046307;
+            color: #fff;
+            padding: 3px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .service {
+            width: 48%;
+            padding: 20px;
+            background-color: #f3df06;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .service {
+                width: 100%;
+            }
+        }
+        .mouseover{
+            z-index: 10;
+        }
+        .mouseover:hover{
+            opacity: 0%;
+            transition-duration: 1s;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <a href="index.html">Home</a>
+            <a href="GA_AboutUs.html">About Us</a>
+            <a href="GA_Contact.html">Contact</a>
+        </div>
+        <h2>Our Services</h2>
+        <a href="GA_Booking.html" class="booking-button"> Book now!</a>
+        <div class="services-container">
+            <div class="service">
+                <h3 >Investment Planning</h3>
+                <p style="z-index:1;position: absolute;"></p>
+                <p>- Discover different types of investment strategies we have to offer</p>
+                <p> Why invest now?</p>
+                <p>- Can get started with low risk</p>
+                <p>- Potential for high rewards</p>
+                <p>- Simple to learn as we guide you</p>
+                    </p>
+                <img class="mouseover" src="https://delawarevalleyjournal.com/wp-content/uploads/2021/06/Office-Workers-300x300.jpg" alt="Investment Planning Image">
+                <p >Investment made easy, Trust us.</p>
+            </div>
+            <div class="service">
+                <h3>Retirement Planning</h3>
+                <p style="z-index:1;position: absolute;"></p>
+                <p>- Goal setting for retirement years and actions/decisions needed to achieve those goals</p>
+                <p>  Why plan for retirement early?</p>
+                <p>- Limited income</p>
+                <p>- Difficulty in meeting basic living expenses</p>
+                <p>- Healthcare issues with related expenses</p>
+                    </p>               
+                <img class="mouseover" src="https://alleninvestments.com/wp-content/uploads/2019/06/solution_square_retirement-300x300.jpg" alt="Retirement Planning Image">
+                <p >Start early, make retirement smooth!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

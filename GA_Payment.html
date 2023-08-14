@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SkratFinance - Payment</title>
+  <style>
+    .container {
+      width: 800px; /* Increase the width to 600px */
+      border: 5px solid #ccc;
+      padding: 20px;
+      background-color: lightblue;
+    }
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .form-row label {
+      font-weight: bold;
+      margin-right: 10px;
+      flex: 0 0 180px;
+      text-align: right;
+      font-size: 12px;
+    }
+    .form-row input[type="text"] {
+      flex: 1;
+    }
+    .header {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center; /* Add text-align center for headers */
+    }
+    .long-input {
+      width: 100%;
+    }
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Card Details</h2>
+    <div class="form-row">
+      <label for="name">First name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="name">Last name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="card_number">Card number:</label>
+      <input type="text" id="card_number" name="card_number" required>
+    </div>
+
+    <div class="form-row">
+      <label for="expiry_month">MM/YY:</label>
+      <input type="text" id="expiry_month" name="expiry_month" placeholder="MM/YY" required>
+    </div>
+    <div class="form-row">
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required>
+    </div>
+
+    <button id="proceedButton">Proceed</button>
+  </div>
+
+  <div id="popup" class="popup" style="display: none;">
+    <h3>Payment successful!</h3>
+    <p>Your payment has been processed.</p>
+    <button id="closePopup">Close</button>
+  </div>
+
+  <script>
+    const proceedButton = document.getElementById("proceedButton");
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("closePopup");
+
+    proceedButton.addEventListener("click", function() {
+      popup.style.display = "block";
+    });
+
+    closePopup.addEventListener("click", function() {
+      popup.style.display = "none";
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
